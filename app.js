@@ -75,7 +75,7 @@ app.get("/api/users/:id", async (req, res) => {
   }
 });
 
-async function main() {
+async function server() {
   try {
     await sequelize.authenticate();
     console.log("Connection has been established successfully.");
@@ -85,4 +85,4 @@ async function main() {
   }
 }
 
-main();
+server();
